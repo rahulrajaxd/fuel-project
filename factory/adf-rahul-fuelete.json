@@ -1,0 +1,9 @@
+{
+	"name": "adf-rahul-fuelete",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "11cd5741-c7b4-47d8-99a2-a5bec5d0fbb8",
+		"tenantId": "e26ef84c-7585-45f7-8fd5-04ebd6c4f12a"
+	}
+}
