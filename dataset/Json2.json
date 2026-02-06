@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "copydata1target",
+				"fileName": "copydata1target.json",
 				"fileSystem": "bronze"
 			}
 		},
