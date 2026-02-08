@@ -2,7 +2,7 @@
 	"name": "target_parq",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage1",
+			"referenceName": "adls_ls",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
