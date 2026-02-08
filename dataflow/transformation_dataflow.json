@@ -12,13 +12,55 @@
 					"name": "bronzefile"
 				}
 			],
-			"sinks": [],
-			"transformations": [],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "adls_ls",
+						"type": "LinkedServiceReference"
+					},
+					"name": "silver"
+				}
+			],
+			"transformations": [
+				{
+					"name": "derivedColumn1"
+				}
+			],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          txn_id as string,",
+				"          fleet_id as string,",
+				"          vehicle_id as string,",
+				"          station_id as string,",
+				"          fuel_type as string,",
+				"          liters as decimal(10,3),",
+				"          amount as decimal(12,2),",
+				"          currency as string,",
+				"          txn_timestamp as timestamp,",
+				"          region as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
-				"     format: 'parquet') ~> bronzefile"
+				"     format: 'parquet') ~> bronzefile",
+				"bronzefile derive(region = upper(region)) ~> derivedColumn1",
+				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'delta',",
+				"     fileSystem: 'silver',",
+				"     mergeSchema: false,",
+				"     autoCompact: false,",
+				"     optimizedWrite: false,",
+				"     vacuum: 0,",
+				"     deletable: false,",
+				"     insertable: true,",
+				"     updateable: false,",
+				"     upsertable: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> silver"
 			]
 		}
 	}
