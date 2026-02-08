@@ -1,0 +1,9 @@
+{
+	"name": "rjadftransform",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bf66c249-6890-47eb-8e0d-712b7b7be7d3",
+		"tenantId": "34785b19-1cc9-44dc-8a53-1cb724e62f2f"
+	}
+}
