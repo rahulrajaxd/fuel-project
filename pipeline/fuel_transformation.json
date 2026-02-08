@@ -1,0 +1,7 @@
+{
+	"name": "fuel_transformation",
+	"properties": {
+		"description": "bronze to silver",
+		"annotations": []
+	}
+}

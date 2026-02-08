@@ -1,5 +1,5 @@
 {
-	"name": "target_parq",
+	"name": "bronze_sink_parq_ds",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "adls_ls",

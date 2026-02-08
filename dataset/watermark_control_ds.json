@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable2",
+	"name": "watermark_control_ds",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "sql_ls",

@@ -1,5 +1,5 @@
 {
-	"name": "AzureSqlTable1",
+	"name": "fuel_txn_ds",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "sql_ls",

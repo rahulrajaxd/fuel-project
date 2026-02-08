@@ -25,7 +25,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "fuel_txn_ds",
 						"type": "DatasetReference"
 					}
 				}
@@ -53,7 +53,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "fuel_txn_ds",
 						"type": "DatasetReference"
 					}
 				}
@@ -114,13 +114,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "fuel_txn_ds",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "target_parq",
+						"referenceName": "bronze_sink_parq_ds",
 						"type": "DatasetReference"
 					}
 				]
@@ -204,13 +204,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "fuel_txn_ds",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "watermark_control_ds",
 						"type": "DatasetReference"
 					}
 				]
