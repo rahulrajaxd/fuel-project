@@ -1,0 +1,9 @@
+{
+	"name": "adfetefuel",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a8dbaf54-3e1a-493c-99ae-c5a07839a43f",
+		"tenantId": "e26ef84c-7585-45f7-8fd5-04ebd6c4f12a"
+	}
+}
