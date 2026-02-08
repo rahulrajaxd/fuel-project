@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "rjadftransform"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"adls_ls_accountKey": {
+			"value": ""
+		},
+		"sql_ls_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://safuel.dfs.core.windows.net/"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "serverfuel.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "fuel_database"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "rahuladmin"
+		},
+		"adls_ls_properties_typeProperties_url": {
+			"value": "https://satransformrj.dfs.core.windows.net/"
+		},
+		"sql_ls_properties_typeProperties_server": {
+			"value": "servertransform.database.windows.net"
+		},
+		"sql_ls_properties_typeProperties_database": {
+			"value": "free-sql-db-transform"
+		},
+		"sql_ls_properties_typeProperties_userName": {
+			"value": "rahuladmin"
+		}
+	}
+}
